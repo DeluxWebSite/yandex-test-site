@@ -130,6 +130,7 @@ legend {
 	background-size: auto;
 	background-position: center bottom;
 	background-blend-mode: overlay;
+	margin-bottom: 80px;
 }
 
 .header-image {
@@ -245,4 +246,103 @@ legend {
 	color: #FFFFFF;
 }
 
-/*  */
+/* run text */
+.tickers-inner {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	background: #F54932;
+	display: flex;
+}
+
+.ticker__head {
+	padding: 18px 12px;
+}
+
+/* .ticker__head:nth-child(even) {
+	padding: 18px 0;
+} */
+
+.ticker__head:last-child {
+	padding-right: 12px;
+}
+
+.ticker {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-grow: 0;
+	flex-shrink: 1;
+	white-space: nowrap;
+	text-indent: 0;
+
+	font-family: 'Merriweather';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 110%;
+	text-align: center;
+	text-transform: uppercase;
+	font-feature-settings: 'pnum' on,
+		'lnum' on;
+
+	color: #FFFFFF;
+
+	animation: startLine 10s linear infinite;
+}
+
+@keyframes startLine {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+/* end run text */
+
+.footer {
+	/* position: relative; */
+	/* height: 210px; */
+	background-color: #E9DED4;
+	overflow: hidden;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tickers-inner-footer {
+	/* position: absolute; */
+	/* align-self: baseline; */
+	/* top: 0; */
+	/* left: 50%; */
+	/* transform: translate(-50%, 0); */
+	background: #F54932;
+	display: flex;
+	align-self: flex-start;
+}
+
+.footer-text-inner {
+	width: 1222px;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-text {
+	font-family: 'Golos Text';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 120%;
+	font-feature-settings: 'pnum' on,
+		'lnum' on;
+
+	color: #313131;
+
+	opacity: 0.6;
+}

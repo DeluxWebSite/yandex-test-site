@@ -168,10 +168,13 @@
 
 .btn-black {
   background: #1F1F1F;
+  border: 2px solid #1F1F1F;
   color: #FFFFFF;
+
 }
 
 .btn-black:hover {
+  border: 2px solid #FBCE51;
   background: #FBCE51;
   color: #1F1F1F;
 }
@@ -179,6 +182,7 @@
 .btn-transparent {
   border: 2px solid #1F1F1F;
   color: #1F1F1F;
+  background: transparent;
 }
 
 .btn-transparent:hover {
